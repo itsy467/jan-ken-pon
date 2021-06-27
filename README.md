@@ -29,3 +29,11 @@ MakeCode でこのリポジトリを編集します。
 
 * for PXT/microbit
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+
+## 遊び方
+
+* P0もしくはP1もしくはP2を短くタップします。それぞれ グー、チョキ、パーです。
+* Aボタンを押します。すると、カウントダウンの後にmicrobitがGかTかPを表示します。これは、microbitが出した手で、それぞれ同じくグー、チョキ、パーです。
+* AとBを同時に(A+Bボタン)押します。You Win! か AIKO か You Lose... が表示されます。これは、それぞれじゃんけんに 勝った、あいこだった(出した手が同じだった)、負けたことを意味します。これでじゃんけんは一通り終了します。
+* 終了後、必ずBボタンを押してください。このボタンを押すことにより、様々な値がリセットされる、つまりもう一度遊ぶことができるようになります。このボタンを押すと RESET! と表示されます。
+* 上の4つをを繰り返します。
