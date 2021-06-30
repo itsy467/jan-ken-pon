@@ -48,11 +48,10 @@ input.onButtonPressed(Button.AB, function () {
     }
     if (PTGmicrobit == PTGplayer) {
         basic.showString("AIKO")
-        if (PTGplayer + PTGmicrobit == 3 && PTGplayer < PTGmicrobit || PTGplayer + PTGmicrobit == 5 && PTGplayer < PTGmicrobit || PTGplayer + PTGmicrobit == 4 && PTGplayer > PTGmicrobit) {
-            basic.showString("You Lose...")
-        }
     }
-})
+    if (PTGplayer + PTGmicrobit == 3 && PTGplayer < PTGmicrobit || PTGplayer + PTGmicrobit == 5 && PTGplayer < PTGmicrobit || PTGplayer + PTGmicrobit == 4 && PTGplayer > PTGmicrobit) {
+            basic.showString("You Lose...")
+    }    
 input.onButtonPressed(Button.B, function () {
     PTGmicrobit = 0
     PTGplayer = 0
